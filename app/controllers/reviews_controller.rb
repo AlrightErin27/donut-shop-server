@@ -20,5 +20,22 @@ class ReviewsController < ApplicationController
         )
         review.to_json
       end
+
+    delete "/reviews/:id" do
+      review = Review.find_by(id:params[:id])
+      if !review.nil?
+        review.destroy
+        review.to_json
+      end
+    end
+
+    patch '/reviews/:id' do
+      review = Review.find(params[:id])
+      review.update(
+        rating: params[:rating],
+        review: params[:review]
+      )
+      review.to_json
+    end
   
 end
