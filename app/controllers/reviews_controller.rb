@@ -1,5 +1,24 @@
 class ReviewsController < ApplicationController
-    get "/reviews" do
-        'all reviews'
+    get "/reviews/donut/:donut_name" do
+      # puts params[:donut_name]
+      donut = Donut.find_by(name:params[:donut_name])
+      donut.reviews.to_json
       end
+
+    get "/reviews/customer/:customer_name" do
+      # puts params[:donut_name]
+      customer = Customer.find_by(name:params[:customer_name])
+      customer.reviews.to_json
+      end
+
+    post '/reviews' do
+        review = Review.create(
+          rating: params[:rating],
+          review: params[:review],
+          donut_id: params[:donut_id],
+          customer_id: params[:customer_id]
+        )
+        review.to_json
+      end
+  
 end
