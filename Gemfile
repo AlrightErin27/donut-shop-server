@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'sinatra'
-gem "activerecord", "~> 6.1"
+gem "activerecord", '~> 6.1'
 gem 'sinatra-activerecord'
 gem 'rake'
 gem 'sqlite3', '~> 1.4'
@@ -9,6 +9,8 @@ gem 'thin'
 gem 'shotgun'
 gem 'bcrypt'
 gem 'tux'
+gem 'corneal'
+gem 'activesupport'
 
 group :test do
   gem 'rspec'
