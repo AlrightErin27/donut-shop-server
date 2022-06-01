@@ -8,8 +8,7 @@ class ApplicationController < Sinatra::Base
     set :views, 'app/views'
   end
 
-  get "/" do
-    "Home Page"
+  get '/' do
+    'Home Page'
   end
-
 end
