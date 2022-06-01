@@ -3,7 +3,7 @@ class CreateDonuts < ActiveRecord::Migration[6.1]
     create_table :donuts do |t|
       t.string :name
       t.text :description
-      t.string :imageURL
+      t.string :image_url
       t.timestamps null: false
     end
   end

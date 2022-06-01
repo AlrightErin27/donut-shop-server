@@ -22,7 +22,7 @@ ActiveRecord::Schema.define(version: 2022_06_01_022609) do
   create_table "donuts", force: :cascade do |t|
     t.string "name"
     t.text "description"
-    t.string "imageURL"
+    t.string "image_url"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -30,7 +30,8 @@ ActiveRecord::Schema.define(version: 2022_06_01_022609) do
   create_table "reviews", force: :cascade do |t|
     t.integer "donut_id"
     t.integer "customer_id"
-    t.text "review_text"
+    t.integer "rating"
+    t.text "review"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
