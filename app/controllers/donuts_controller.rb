@@ -20,6 +20,8 @@ class DonutsController < ApplicationController
     if !donut.nil?
       donut.destroy
       donut.to_json
+    else 
+      puts "Error deleting donut! Donut doesn't exist!"
     end
   end
 end
