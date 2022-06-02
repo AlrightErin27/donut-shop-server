@@ -1,5 +1,7 @@
 require './config/environment'
 require 'sinatra'
+require 'rack'
+require 'rack/contrib'
 
 # if ActiveRecord::Migrator.needs_migration?
 #   raise 'Migrations are pending. Run `rake db:migrate` to resolve the issue.'
@@ -13,6 +15,8 @@ use Rack::Cors do
              methods: %i[get post delete put patch options head]
   end
 end
+
+use Rack::JSONBodyParser
 
 run ApplicationController
 use CustomersController
