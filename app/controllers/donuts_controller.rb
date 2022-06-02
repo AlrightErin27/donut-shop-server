@@ -16,8 +16,8 @@ class DonutsController < ApplicationController
     donut.to_json
   end
 
-  delete '/donuts/:donut_name' do
-    donut = Donut.find_by(name: params[:donut_name])
+  delete '/donuts/:id' do
+    donut = Donut.find_by(id: params[:id])
     if !donut.nil?
       donut.destroy
       donut.to_json
