@@ -1,5 +1,5 @@
 class CustomersController < ApplicationController
-    get "/customers" do
-        'all customers'
-      end
+  get '/customers' do
+    Customer.all.to_json
+  end
 end
