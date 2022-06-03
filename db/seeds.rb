@@ -4,6 +4,7 @@ bob = Customer.create(name: 'Bob', location: 'Boulder')
 max = Customer.create(name: 'Max', location: 'Denver')
 danny = Customer.create(name: 'Danny', location: 'Colorado Springs')
 isabelle = Customer.create(name: 'Isabelle', location: 'Denver')
+janedoe = Customer.create(name: '', location: 'Mordor')
 
 puts 'Creating Donuts...'
 homer =

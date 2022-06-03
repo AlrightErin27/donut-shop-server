@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     customer.reviews.to_json
   end
 
-  post '/reviews' do
+  post '/new_review' do
     review =
       Review.create(
         rating: params[:rating],
@@ -21,6 +21,16 @@ class ReviewsController < ApplicationController
       )
     review.to_json
   end
+
+  # post '/new_donut' do
+  #   donut =
+  #     Donut.create(
+  #       name: params[:name],
+  #       description: params[:description],
+  #       image_url: params[:image_url],
+  #     )
+  #   donut.to_json
+  # end
 
   delete '/reviews/:id' do
     review = Review.find_by(id: params[:id])
