@@ -18,7 +18,7 @@ orig =
   Donut.create(
     name: 'The Original Glazed Donut',
     description:
-      'When we turn the light on, it means that our delicious Original Glazed Donuts are available right at that very moment! stop in and get some hot Original Glazed® donuts.',
+      'When we turn the light on, it means that our delicious Original Glazed Donuts are available right at that very moment!',
     image_url:
       'https://www.krispykreme.com/getattachment/1aa956f7-e7ca-4e27-bcc6-a603211d7c68/Original-Glazed-Doughnut.aspx?width=310&height=310&mode=max&quality=60&format=jpg',
   )
@@ -117,7 +117,7 @@ oreo =
   Donut.create(
     name: 'Oreo Cookies and Cream',
     description:
-      'The Original Glazed Dnut covered in rich OREO® Cookie Glaze, filled with Cookies and cream™, and finished with an icing drizzle and OREO Cookie pieces.',
+      'The Original Glazed Dnut covered in rich OREO® Cookie Glaze, filled with Cookies and cream, and finished with an icing drizzle and OREO Cookie pieces.',
     image_url:
       'https://www.krispykreme.com/getattachment/43524412-f0a3-481b-b0d7-3eb7cc6288f4/OREO-Cookies-and-KREME.aspx?width=310&height=310&mode=max&quality=60&format=jpg',
   )
