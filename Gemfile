@@ -4,11 +4,18 @@ gem 'sinatra'
 gem "activerecord", '~> 6.1'
 gem 'sinatra-activerecord'
 gem 'rake'
-gem 'sqlite3', '~> 1.4'
-gem 'thin'
+gem 'sqlite3', '~> 1.4', :group => :development
+gem 'pg', :group => :production
+
 gem 'shotgun'
 gem 'bcrypt'
 gem 'tux'
+
+
+
+
+
+
 gem 'corneal'
 gem 'activesupport'
 # Rack middleware. Used specifically for parsing the request body into params.
